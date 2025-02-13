@@ -36,7 +36,7 @@
         <div class="hero bg-base-200 min-h-screen">
             <div class="hero-content flex flex-col lg:flex-row items-center justify-center gap-8 px-4 lg:px-16">
                 <!-- Image Section -->
-                <img src="https://i.ibb.co/xSHHq43t/View.jpg" className="rounded-lg shadow-2xl" alt="View" />
+                <img src="https://i.ibb.co/xSHHq43t/View.jpg" class="rounded-lg shadow-2xl" alt="View" />
 
                 <!-- Text Section -->
                 <div class="text-center lg:text-left">
@@ -63,14 +63,10 @@
         </div>
     </div>
 
-    <!--  -->
-    <div class="py-8">
+    <!-- Room -->
+    <div class="py-8 "  style="margin-top: -150px;">
         <div class="hero bg-base-200 min-h-screen">
             <div class="hero-content flex flex-col lg:flex-row items-center justify-center gap-8 px-4 lg:px-16">
-                <!-- Image Section -->
-                <img src="https://i.ibb.co.com/XrNffGTm/roberto-nickson-tle-CJi-DOri0-unsplash.jpg"
-                    class="rounded-lg shadow-2xl" alt="View" />
-
                 <!-- Text Section -->
                 <div class="text-center lg:text-left">
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Rooms</h1>
@@ -90,13 +86,47 @@
                         <a href="/roombooking">Book Now</a>
                     </button>
                 </div>
+                <!-- Image Section -->
+                <img src="https://i.ibb.co.com/XrNffGTm/roberto-nickson-tle-CJi-DOri0-unsplash.jpg"
+                    class="rounded-lg shadow-2xl" alt="View" />
+            </div>
+        </div>
+    </div>
+    <!-- swiming pull -->
+    <div class="py-8"  style="margin-top: -150px;">
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex flex-col lg:flex-row items-center justify-center gap-8 px-4 lg:px-16">
+                <!-- Image Section -->
+                <img src="https://i.ibb.co.com/vCJSX4hs/exterior-design-in-gulshan-1-1024x576.jpg"
+                    class="rounded-lg shadow-2xl" alt="View" />
+
+                <!-- Text Section -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800">SWIMING POOL</h1>
+                    <p class="py-3 text-lg md:text-xl text-gray-700">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi.
+
+                    </p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800">CAR PARKING</h1>
+                    <p class="py-3 text-lg md:text-xl text-gray-700">Provident cupiditate voluptatem Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Dolore, similique! et in. Quaerat fugiat ut assumenda
+                        excepturi exercitationem quasi. </p>
+
+                    <button
+                        class="btn btn-primary text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        <a href="/roombooking">Book Now</a>
+                    </button>
+                </div>
+
             </div>
         </div>
     </div>
 
 
 
-    <div class="min-h-screen p-8 bg-base-200">
+    <div class="min-h-screen p-8 bg-base-200"  style="margin-top: -250px;">
         <h1 class="text-4xl font-bold text-center py-8">Gallery</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div class="relative">
