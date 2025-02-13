@@ -3,6 +3,21 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
+    return view('home');
+});
+Route::get('/inspiration', function () {
+    return view('homepages.inspiration');
+});
+Route::get('/roombooking', function () {
+    return view('homepages.roombooking');
+});
+Route::get('/about', function () {
+    return view('homepages.about');
+});
+Route::get('/contact', function () {
+    return view('homepages.contact');
+});
+Route::get('/login', function () {
     return view('login');
 });
 Route::get('/maindashboard', function () {
