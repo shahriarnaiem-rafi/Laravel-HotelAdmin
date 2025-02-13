@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 h-screen flex items-center justify-center">
 
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
-        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
-        
-        <form action="#" method="POST">
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email">
+<body >
+
+    <div
+        class="flex justify-center items-center min-h-screen bg-gradient-to-b from-black via-transparent to-black bg-cover">
+        <div class="bg-black bg-opacity-70 p-10 rounded-lg shadow-lg w-full max-w-md relative">
+            <!-- Home Button -->
+            <a href="/"
+                class="absolute top-4 left-4 flex items-center px-4 py-2 text-orange-500 font-semibold text-lg hover:text-white transition">
+                <i class="fas fa-home mr-2"></i> Back to Home
+            </a>
+
+            <h2 class="text-3xl font-bold text-center text-orange-500 mb-6">Login</h2>
+
+            <!-- Error Message -->
+            <!-- Uncomment and add error message logic -->
+            <!-- <div class="text-red-500 text-center mb-4">Error message goes here</div> -->
+
+            <form>
+                <!-- Role Selection -->
+                <label for="role" class="block text-gray-400 mb-2">Role</label>
+                <select id="role"
+                    class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+                    <option value="Admin">Admin</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Customer">Customer</option>
+                </select>
+
+                <!-- Email -->
+                <label for="email" class="block text-gray-400 mb-2">Email</label>
+                <input type="email" id="email" placeholder="Enter your email"
+                    class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500"
+                    required />
+
+                <!-- Password -->
+                <label for="password" class="block text-gray-400 mb-2">Password</label>
+                <div class="flex items-center bg-gray-800 border border-gray-600 rounded-lg mb-4">
+                    <i class="fas fa-lock text-gray-400 px-4"></i>
+                    <input type="password" id="password" placeholder="Enter your password"
+                        class="w-full px-4 py-2 bg-gray-800 text-white border-0 rounded-lg focus:ring-2 focus:ring-orange-500"
+                        required />
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg hover:bg-orange-400 transition duration-300">
+                   <a href="/maindashboard">Log in</a>
+                </button>
+
+                <!-- Registration Link -->
+                <a href="/registration" class="block text-center mt-4 text-orange-500 text-sm hover:underline">
+                    Don't have an account? Register here
+                </a>
+            </form>
+
+            <div class="text-center mt-6 text-gray-400 text-sm">
+                <p>&copy; 2025 FastTrack. All Rights Reserved.</p>
             </div>
-
-            <div class="mb-6">
-                <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
-                <input type="password" id="password" name="password" required class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your password">
-            </div>
-
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md text-lg hover:bg-blue-700 transition duration-200" ><a href="/maindashboard">Login</a></button>
-        </form>
-
-        <div class="mt-4 text-center">
-            <p class="text-sm text-gray-600">Don't have an account? <a href="#" class="text-blue-600 hover:text-blue-700">Sign up</a></p>
         </div>
     </div>
 
+
 </body>
+
 </html>

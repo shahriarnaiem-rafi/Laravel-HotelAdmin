@@ -1,6 +1,6 @@
 <aside class="main-sidebar bg-[#780C28] elevation-4 text-white">
   <!-- Brand Logo -->
-  <a href="/dashboard" class="brand-link text-white">
+  <a href="/maindashboard" class="brand-link text-white">
     <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
       style="opacity: .8">
     <span class="brand-text font-weight-light">Hotel Admin</span>
@@ -36,7 +36,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column text-white" data-widget="treeview" role="menu"
         data-accordion="false">
         <li class="nav-item">
-          <a href="/dashboard" class="nav-link text-white">
+          <a href="/maindashboard" class="nav-link text-white">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
