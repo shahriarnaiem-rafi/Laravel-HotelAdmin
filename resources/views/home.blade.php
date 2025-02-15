@@ -20,7 +20,7 @@
     <!-- Hero Section -->
     <div class="relative min-h-[400px] bg-cover bg-center flex items-center justify-center text-white"
         style="background-image: url('https://i.ibb.co/SzGFCHt/Banner.jpg');">
-        <div class="bg-black bg-opacity-50 p-8 text-center">
+        <div class="bg-black bg-opacity-30 p-8 text-center rounded-2xl">
             <h1 class="text-4xl md:text-5xl font-bold">Welcome to GrandPr0 Hotel</h1>
             <p class="text-lg md:text-2xl mt-4">Experience luxury and comfort like never before.</p>
         </div>

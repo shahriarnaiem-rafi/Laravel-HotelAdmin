@@ -23,6 +23,9 @@ Route::get('/login', function () {
 Route::get('/registration', function () {
     return view('registration');
 });
+
+
+
 Route::get('/maindashboard', function () {
     return view('AdminDashboard.main');
 });
