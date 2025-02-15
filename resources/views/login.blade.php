@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body >
+<body>
 
-    <div
-        class="flex justify-center items-center min-h-screen bg-gradient-to-b from-black via-transparent to-black bg-cover">
+    <div class="flex justify-center items-center min-h-screen bg-gradient-to-b from-black via-transparent to-black bg-cover">
         <div class="bg-black bg-opacity-70 p-10 rounded-lg shadow-lg w-full max-w-md relative">
             <!-- Home Button -->
             <a href="/"
@@ -67,7 +67,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 

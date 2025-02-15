@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,10 +21,9 @@ Route::get('/contact', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/registration', function () {
-    return view('registration');
-});
-
+// go to registration page
+Route::get('/registration',[RegistrationController::class,'registration'])->name('registration');
+Route::post('/registrationSave',[RegistrationController::class,'registrationSave'])->name('registrationSave');
 
 
 Route::get('/maindashboard', function () {

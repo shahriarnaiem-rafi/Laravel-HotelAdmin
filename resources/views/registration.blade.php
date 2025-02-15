@@ -20,7 +20,8 @@
             <!-- Error Message -->
             <div id="errorMessage" class="text-red-500 text-center mb-4"></div>
 
-            <form id="registrationForm">
+            <form id="registrationForm" action="{{ route('registrationSave') }}" method="post">
+                @csrf
                 <!-- Name -->
                 <label class="block text-gray-400 mb-2">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name"
@@ -45,10 +46,10 @@
                     class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500"
                     required />
 
-                <!-- Gender -->
                 <label class="block text-gray-400 mb-2">Gender</label>
-                <select name="gender" id="gender"
+                <select name="gender" id="gender" required
                     class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+                    <option value="">Select Gender</option> <!-- Default empty option -->
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Other">Other</option>
@@ -56,8 +57,9 @@
 
                 <!-- Country -->
                 <label class="block text-gray-400 mb-2">Country</label>
-                <select name="country" id="country"
+                <select name="country" id="country" required
                     class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+                    <option value="">Select Country</option>
                     <option value="Bangladesh">Bangladesh</option>
                     <option value="India">India</option>
                     <option value="Pakistan">Pakistan</option>
@@ -67,18 +69,19 @@
 
                 <!-- Role -->
                 <label class="block text-gray-400 mb-2">Role</label>
-                <select name="role" id="role"
+                <select name="role" id="role" required
                     class="w-full px-4 py-2 mb-6 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+                    <option value="">Select Role</option>
                     <option value="Admin">Admin</option>
                     <option value="Staff">Staff</option>
                     <option value="Customer">Customer</option>
                 </select>
-
                 <!-- Submit Button -->
-                <button type="submit"
-                    class="w-full py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg hover:bg-orange-400 transition duration-300">
-                    Register
-                </button>
+
+                <input type="submit" value="submit"
+                    class="w-full py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg hover:bg-orange-400 transition duration-300"
+                    name="submit">
+
 
                 <!-- Login Link -->
                 <a href="/login" class="block text-center mt-4 text-orange-500 text-sm hover:underline">
@@ -97,7 +100,7 @@
         const errorMessageElement = document.getElementById('errorMessage');
 
         registrationForm.addEventListener('submit', function (event) {
-            event.preventDefault();
+
 
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
