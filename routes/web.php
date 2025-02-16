@@ -29,7 +29,7 @@ Route::post('/registrationSave',[RegistrationController::class,'registrationSave
 Route::get('/maindashboard', function () {
     return view('AdminDashboard.main');
 });
-Route::get('/dashboard', function () {
+Route::get('/maindashboard', function () {
     return view('AdminDashboard.AdminPages.dashboard');
 });
 Route::get('/roomdetails', function () {
@@ -39,6 +39,8 @@ Route::get('/roomdetails', function () {
 Route::get('/adduser', function () {
     return view('AdminDashboard.AdminPages.Users.adduser');
 });
+Route::post('/registrationSave',[RegistrationController::class,'registrationSave'])->name('registrationSave');
+
 Route::get('/manageuser', function () {
     return view('AdminDashboard.AdminPages.Users.manageuser');
 });

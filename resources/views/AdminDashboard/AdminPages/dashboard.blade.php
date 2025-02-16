@@ -18,13 +18,13 @@
         <!-- Total Parcel -->
         <div class="bg-gray-800 text-white rounded-xl shadow-lg p-6 text-center">
             <h3 class="text-4xl font-bold drop-shadow-md">56</h3>
-            <p class="text-xl font-semibold mt-2 drop-shadow-md">Under Maintainenece</p>
+            <p class="text-xl font-semibold mt-2 drop-shadow-md">Revenue</p>
         </div>
 
         <!-- Pending Delivered -->
         <div class="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-xl shadow-lg p-6 text-center">
             <h3 class="text-4xl font-bold drop-shadow-md">546</h3>
-            <p class="text-xl font-semibold mt-2 drop-shadow-md">Ready to Book</p>
+            <p class="text-xl font-semibold mt-2 drop-shadow-md">Total Guest</p>
         </div>
     </div>
 </div>

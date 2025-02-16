@@ -1,4 +1,4 @@
-<aside class="main-sidebar bg-[#780C28] elevation-4 text-white">
+<aside class="main-sidebar bg-[#780C28] elevation-4 text-white flex flex-col h-screen">
   <!-- Brand Logo -->
   <a href="/maindashboard" class="brand-link text-white">
     <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -7,7 +7,7 @@
   </a>
 
   <!-- Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar flex flex-col flex-grow">
     <!-- Sidebar user (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
@@ -32,25 +32,21 @@
     </div>
 
     <!-- Sidebar Menu -->
-    <nav class="mt-2">
+    <nav class="mt-2 flex-grow">
       <ul class="nav nav-pills nav-sidebar flex-column text-white" data-widget="treeview" role="menu"
         data-accordion="false">
         <li class="nav-item">
           <a href="/maindashboard" class="nav-link text-white">
             <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>
-              Dashboard
-            </p>
+            <p>Dashboard</p>
           </a>
         </li>
 
-        <!-- View/edit room details (type, price, status).
-Set room availability (vacant, reserved, maintenance). -->
+        <!-- Room Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-          <i class="fa-solid fa-bed-pulse"></i>
-            <p>
-              Room Management
+            <i class="fa-solid fa-bed-pulse"></i>
+            <p>Room Management
               <i class="fas fa-angle-left right"></i>
               <span class="badge badge-info right">1</span>
             </p>
@@ -58,95 +54,46 @@ Set room availability (vacant, reserved, maintenance). -->
           <ul class="nav nav-treeview">
             <li class="nav-item">
               <a href="/roomdetails" class="nav-link text-white">
-              
-                <p>Room Details  </p><i class="fa-solid fa-info"></i>
+                <p>Add Room </p><i class="fa-solid fa-info"></i>
               </a>
             </li>
-            
+            <li class="nav-item">
+              <a href="/roomdetails" class="nav-link text-white">
+                <p>Room List </p><i class="fa-solid fa-info"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/roomdetails" class="nav-link text-white">
+                <p>Add Room Types </p><i class="fa-solid fa-info"></i>
+              </a>
+            </li>
           </ul>
         </li>
+
+        <!-- Booking Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="nav-icon fas fa-user"></i>
-            <p>
-              Reservation Management
-              <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">1</span>
-            </p>
+          <i class="fa-regular fa-bookmark"></i>
+            <p>Booking Management</p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Booking Details</p>
-              </a>
-            </li>
-          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white">
-            <i class="nav-icon fas fa-user"></i>
-            <p>
-              Housekeeping & Maintenance
-              <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">1</span>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Booking Details</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white">
-            <i class="nav-icon fas fa-user"></i>
-            <p>Pricing & Promotions
-              <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">1</span>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Booking Details</p>
-              </a>
-            </li>
-          </ul>
-        </li>
+
+        <!-- Transaction -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
             <i class="fa-brands fa-amazon-pay"></i>
             <p>
-              Payment & Invoicing
-              <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">1</span>
+              Transection
+
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="/payament" class="nav-link text-white">
-                <i class="fa-brands fa-amazon-pay"></i>
-                <p>Payment Details</p>
-              </a>
-            </li>
-          </ul>
         </li>
 
-
-
-
-
-
+        <!-- User Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
             <i class="fa-solid fa-people-roof"></i>
             <p>
-              <!-- Role-based access control (Admin, Front Desk, etc.). -->
               User Management
               <i class="fas fa-angle-left right"></i>
               <span class="badge badge-info right">2</span>
@@ -167,13 +114,16 @@ Set room availability (vacant, reserved, maintenance). -->
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a href="/" class="nav-link text-white">
-            <i class="fa-solid fa-right-from-bracket"></i>
-            <p>Log out</p>
-          </a>
-        </li>
       </ul>
     </nav>
+
+   
+    <div class="mt-auto">
+      <p class=" ">
+        <a href="/" class="nav-link text-white bg-black rounded-full">
+          <i class="fa-solid fa-right-from-bracket"></i> Log out
+        </a>
+      </p>
+    </div>
   </div>
 </aside>
