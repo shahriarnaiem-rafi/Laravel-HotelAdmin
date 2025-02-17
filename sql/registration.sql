@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2025 at 07:10 PM
+-- Generation Time: Feb 17, 2025 at 07:46 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -119,7 +119,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (20, '0001_01_01_000001_create_cache_table', 3),
 (21, '0001_01_01_000002_create_jobs_table', 3),
 (22, '2025_02_15_175526_create_registration_table', 3),
-(23, '2025_02_17_164007_create_staff_manage_table', 4);
+(23, '2025_02_17_164007_create_staff_manage_table', 4),
+(24, '2025_02_17_182453_create_staff_manage_table', 5);
 
 -- --------------------------------------------------------
 
@@ -181,8 +182,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('sgo40NZqAUQZjjOc5giGTvWZjCja6QF46VSHFo88', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQ3drWnpiYzVSUG1aZTlIQkh3d0tJNXo0ck9Sa1BEZnRUVnU0QTVhRiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1739808824),
-('yngqULlYltwi4xePGD4d4IzsUmyIdJ734asNtVxL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUUV1Rm1vZm9JdDgxeTR5T2xSZG1xY3MwMWhpZE5aeTV6VjVhRTM1QyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yb29tZGV0YWlscyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1739815777);
+('yngqULlYltwi4xePGD4d4IzsUmyIdJ734asNtVxL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUUV1Rm1vZm9JdDgxeTR5T2xSZG1xY3MwMWhpZE5aeTV6VjVhRTM1QyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1739817952);
 
 -- --------------------------------------------------------
 
@@ -196,6 +196,7 @@ CREATE TABLE `staff_manage` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -204,9 +205,9 @@ CREATE TABLE `staff_manage` (
 -- Dumping data for table `staff_manage`
 --
 
-INSERT INTO `staff_manage` (`id`, `name`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES
-(4, 'Shahriar Naiem', 'ss@gmail.com', '432432', '0480239804', '2025-02-17 11:36:27', '2025-02-17 12:05:24'),
-(5, 'Rafi', 'shahriarnaiemrafi94@gmail.com', '12345', '01301441194', '2025-02-17 12:07:58', '2025-02-17 12:07:58');
+INSERT INTO `staff_manage` (`id`, `name`, `email`, `password`, `phone`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'raiyan', 'raiyan@gmail.com', '232432', '102333', 'https://i.ibb.co.com/8gg4dT68/Raiyan.jpg', '2025-02-17 12:30:53', '2025-02-17 12:34:29'),
+(2, 'Shahriar', 'shahriarnaiemrafi94@gmail.com', '12340', '01301441194', 'https://i.ibb.co.com/X6702Sf/Transparent.png', '2025-02-17 12:35:09', '2025-02-17 12:35:09');
 
 -- --------------------------------------------------------
 
@@ -321,7 +322,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `registration`
@@ -333,7 +334,7 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `staff_manage`
 --
 ALTER TABLE `staff_manage`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
