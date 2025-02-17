@@ -11,13 +11,14 @@
 
 <body>
 
-    <div class="flex justify-center items-center min-h-screen bg-gradient-to-b from-black via-transparent to-black bg-cover">
+    <div
+        class="flex justify-center items-center min-h-screen bg-gradient-to-b from-black via-transparent to-black bg-cover">
+        <a href="/"
+            class="absolute top-4 left-4 flex items-center px-4 py-2 text-orange-500 font-semibold text-lg hover:text-white transition">
+            <i class="fas fa-home mr-2"></i> Back to Home
+        </a>
         <div class="bg-black bg-opacity-70 p-10 rounded-lg shadow-lg w-full max-w-md relative">
             <!-- Home Button -->
-            <a href="/"
-                class="absolute top-4 left-4 flex items-center px-4 py-2 text-orange-500 font-semibold text-lg hover:text-white transition">
-                <i class="fas fa-home mr-2"></i> Back to Home
-            </a>
 
             <h2 class="text-3xl font-bold text-center text-orange-500 mb-6">Login</h2>
 
@@ -53,7 +54,7 @@
                 <!-- Submit Button -->
                 <button type="submit"
                     class="w-full py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg hover:bg-orange-400 transition duration-300">
-                   <a href="/maindashboard">Log in</a>
+                    <a href="/maindashboard">Log in</a>
                 </button>
 
                 <!-- Registration Link -->

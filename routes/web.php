@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,6 +25,7 @@ Route::get('/login', function () {
 // go to registration page
 Route::get('/registration',[RegistrationController::class,'registration'])->name('registration');
 Route::post('/registrationSave',[RegistrationController::class,'registrationSave'])->name('registrationSave');
+// Route::post('/registrationSave',[RegistrationController::class,'registrationSave'])->name('registrationSave');
 
 
 Route::get('/maindashboard', function () {
@@ -39,8 +41,12 @@ Route::get('/roomdetails', function () {
 Route::get('/adduser', function () {
     return view('AdminDashboard.AdminPages.Users.adduser');
 });
-Route::post('/registrationSave',[RegistrationController::class,'registrationSave'])->name('registrationSave');
+Route::post('create',[StaffController::class,'addStaff'])->name('create');
+Route::get('/edit{id}',[StaffController::class,'update'])->name('update');
+Route::post('/updated',[StaffController::class,'updateStaff'])->name('updateStaff');
 
-Route::get('/manageuser', function () {
-    return view('AdminDashboard.AdminPages.Users.manageuser');
-});
+
+
+Route::get('/manageuser',[StaffController::class,'showStaff']);
+
+Route::delete('/delete/{id}',[StaffController::class,'removeStaff'])->name('delete');

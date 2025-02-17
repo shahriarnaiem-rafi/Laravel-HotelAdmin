@@ -41,32 +41,6 @@
             <p>Dashboard</p>
           </a>
         </li>
-        <!-- User Management -->
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white">
-            <i class="fa-solid fa-people-roof"></i>
-            <p>
-              Staff Management
-              <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">2</span>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="/adduser" class="nav-link text-white">
-                <i class="fa-solid fa-user-plus"></i>
-                <p>Add Staff</p>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="/manageuser" class="nav-link text-white">
-                <i class="fa-solid fa-people-roof"></i>
-                <p>Manage Staff</p>
-              </a>
-            </li>
-          </ul>
-        </li>
 
         <!-- Room Management -->
         <li class="nav-item">
@@ -74,30 +48,32 @@
             <i class="fa-solid fa-bed-pulse"></i>
             <p>Room Management
               <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">2 </span>
+              <span class="badge badge-info right">1</span>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
               <a href="/roomdetails" class="nav-link text-white">
-                <i class="fa-solid fa-plus"></i>
-                <p>Add Room </p>
+                <p>Add Room </p><i class="fa-solid fa-info"></i>
               </a>
             </li>
             <li class="nav-item">
               <a href="/roomdetails" class="nav-link text-white">
-                <i class="fa-solid fa-list"></i>
-                <p>Room List </p>
+                <p>Room List </p><i class="fa-solid fa-info"></i>
               </a>
             </li>
-
+            <li class="nav-item">
+              <a href="/roomdetails" class="nav-link text-white">
+                <p>Add Room Types </p><i class="fa-solid fa-info"></i>
+              </a>
+            </li>
           </ul>
         </li>
 
         <!-- Booking Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-regular fa-bookmark"></i>
+          <i class="fa-regular fa-bookmark"></i>
             <p>Booking Management</p>
           </a>
         </li>
@@ -112,30 +88,36 @@
             </p>
           </a>
         </li>
+
+        <!-- User Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-solid fa-people-roof"></i>
             <p>
-              Housekeeping
-
+              User Management
+              <i class="fas fa-angle-left right"></i>
+              <span class="badge badge-info right">2</span>
             </p>
           </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/adduser" class="nav-link text-white">
+                <i class="fa-solid fa-user-plus"></i>
+                <p>Add User</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/manageuser" class="nav-link text-white">
+                <i class="fa-solid fa-people-roof"></i>
+                <p>Manage User</p>
+              </a>
+            </li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white">
-            <i class="fa-brands fa-amazon-pay"></i>
-            <p>
-              Report
-
-            </p>
-          </a>
-        </li>
-
-
       </ul>
     </nav>
 
-
+   
     <div class="mt-auto">
       <p class=" ">
         <a href="/" class="nav-link text-white bg-black rounded-full">

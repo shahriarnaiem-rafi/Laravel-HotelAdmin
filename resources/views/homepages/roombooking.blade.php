@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Booking</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body class="bg-gray-100">
 
@@ -16,6 +17,8 @@
             <div class="text-center mb-8">
                 <h2 class="text-4xl font-bold text-gray-800">Room Booking</h2>
                 <p class="text-lg text-gray-600 mt-2">Book your stay with us and enjoy the luxury!</p>
+                <p class="text-3xl text-red-600 mt-2 " >Please Registration First <br>
+                    <span class="text-5xl">Click  Login and Registration <i class="fa-solid fa-arrow-up-right-from-square"></i></span> </p>
             </div>
 
             <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
