@@ -97,7 +97,7 @@
         <!-- Booking Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-person-chalkboard"></i>
             <p>Booking Management</p>
           </a>
         </li>
@@ -105,7 +105,7 @@
         <!-- Transaction -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-solid fa-money-bill-trend-up"></i>
             <p>
               Transection
 
@@ -114,7 +114,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-solid fa-broom"></i>
             <p>
               Housekeeping
 
@@ -123,7 +123,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-solid fa-bug"></i>
             <p>
               Report
 
