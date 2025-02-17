@@ -20,7 +20,12 @@
                     @foreach ($staffDatas as $staffData)
                         <tr>
                             <td class="py-3 px-6 text-left">{{ $staffData->id }}</td>
-                            <td><img src="" alt="img"></td>
+                            <td class="py-3 px-6 text-left">
+                                <div class="image">
+                                    <img src="{{ $staffData->image }}" class="img-circle elevation-2"
+                                        alt="Staff Image" style="width: 50px; height: 50px; object-fit: cover;">
+                                </div>
+                            </td>
                             <td class="py-3 px-6 text-left">{{ $staffData->name }}</td>
                             <td class="py-3 px-6 text-left">{{ $staffData->email }}</td>
 

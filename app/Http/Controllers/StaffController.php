@@ -27,6 +27,7 @@ class StaffController extends Controller
         $addData->email = $request->email;
         $addData->password = $request->password;
         $addData->phone = $request->phone;
+        $addData->image = $request->image;
         $addData->save();
         return Redirect::to('/manageuser');
     }
@@ -42,6 +43,7 @@ class StaffController extends Controller
         $staffData->email = $request->email;
         $staffData->password = $request->password;
         $staffData->phone = $request->phone;
+        $staffData->image = $request->image;
         $staffData->save();
         return Redirect::to('/manageuser');
     }

@@ -34,11 +34,11 @@
                     <input type="tel" name="phone" id="phone" required value="{{ $staffData->phone  }}"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none transition duration-200">
                 </div>
-                <!-- <div>
+                <div>
                     <label for="picture" class="block text-sm font-medium text-gray-700">Picture:</label>
-                    <input type="file" name="picture" id="picture" required title="Png/Jpg/Jpeg are allowed"
+                    <input type="text" name="image" id="image" required value="{{ $staffData->image }}" placeholder="update your image link"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none transition duration-200">
-                </div> -->
+                </div>
               
 
                 <button type="submit"

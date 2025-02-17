@@ -33,7 +33,7 @@
                 </div>
                 <div>
                     <label for="picture" class="block text-sm font-medium text-gray-700">Picture:</label>
-                    <input type="file" name="picture" id="picture" required title="Png/Jpg/Jpeg are allowed"
+                    <input type="text" name="image" id="image" required placeholder="insert your image link"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none transition duration-200">
                 </div>
               
