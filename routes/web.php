@@ -13,6 +13,9 @@ Route::get('/inspiration', function () {
 Route::get('/roombooking', function () {
     return view('homepages.roombooking');
 });
+Route::get('/room', function () {
+    return view('homepages.room');
+});
 Route::get('/about', function () {
     return view('homepages.about');
 });
