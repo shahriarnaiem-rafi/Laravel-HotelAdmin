@@ -79,7 +79,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/roomdetails" class="nav-link text-white">
+              <a href="/addroom" class="nav-link text-white">
                 <i class="fa-solid fa-plus"></i>
                 <p>Add Room </p>
               </a>
@@ -88,6 +88,12 @@
               <a href="/roomdetails" class="nav-link text-white">
                 <i class="fa-solid fa-list"></i>
                 <p>Room List </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/addroomtype" class="nav-link text-white">
+                <i class="fa-solid fa-list"></i>
+                <p>Add Room Type </p>
               </a>
             </li>
 

@@ -37,6 +37,12 @@ Route::get('/maindashboard', function () {
 Route::get('/maindashboard', function () {
     return view('AdminDashboard.AdminPages.dashboard');
 });
+Route::get('/addroom', function () {
+    return view('AdminDashboard.AdminPages.RoomDetails.addroom');
+});
+Route::get('/addroomtype', function () {
+    return view('AdminDashboard.AdminPages.RoomDetails.addroomtype');
+});
 Route::get('/roomdetails', function () {
     return view('AdminDashboard.AdminPages.RoomDetails.roomdetails');
 });

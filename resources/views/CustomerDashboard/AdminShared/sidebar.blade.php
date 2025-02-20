@@ -53,7 +53,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/roomdetails" class="nav-link text-white">
+              <a href="/addroom" class="nav-link text-white">
                 <p>Add Room </p><i class="fa-solid fa-info"></i>
               </a>
             </li>

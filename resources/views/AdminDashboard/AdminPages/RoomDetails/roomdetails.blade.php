@@ -31,7 +31,9 @@
                         <td class="px-6 py-4">
                             <!-- onclick="openEditModal('101', 'Single', 100, 'Vacant')" -->
                             <button 
-                                class="bg-yellow-500 text-white px-4 py-2 rounded-md">Edit</button>
+                                class=" text-green   rounded-md"><i class="fa-solid fa-pen-to-square"></i> </button>
+                            <button 
+                                class=" text-red px-4 py-2 rounded-md"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                     <!-- Room 2 -->
@@ -43,21 +45,12 @@
                         <td class="px-6 py-4">
                             <!-- onclick="openEditModal('102', 'Double', 150, 'Reserved')" -->
                             <button 
-                                class="bg-yellow-500 text-white px-4 py-2 rounded-md">Edit</button>
-                        </td>
-                    </tr>
-                    <!-- Room 3 -->
-                    <tr class="border-b">
-                        <td class="px-6 py-4 text-sm text-gray-900">103</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Suite</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">$250</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Maintenance</td>
-                        <td class="px-6 py-4">
-                            <!-- onclick="openEditModal('103', 'Suite', 250, 'Maintenance')" -->
+                                class=" text-green   rounded-md"><i class="fa-solid fa-pen-to-square"></i> </button>
                             <button 
-                                class="bg-yellow-500 text-white px-4 py-2 rounded-md">Edit</button>
+                                class=" text-red px-4 py-2 rounded-md"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
+                    
                 </tbody>
             </table>
         </div>
