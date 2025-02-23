@@ -74,7 +74,7 @@
             <i class="fa-solid fa-bed-pulse"></i>
             <p>Room Management
               <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">2 </span>
+              <span class="badge badge-info right">3</span>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -92,7 +92,7 @@
             </li>
             <li class="nav-item">
               <a href="/addroomtype" class="nav-link text-white">
-                <i class="fa-solid fa-list"></i>
+              <i class="fa-solid fa-plus"></i>
                 <p>Add Room Type </p>
               </a>
             </li>

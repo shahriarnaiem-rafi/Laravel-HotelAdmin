@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,9 +41,15 @@ Route::get('/maindashboard', function () {
 Route::get('/addroom', function () {
     return view('AdminDashboard.AdminPages.RoomDetails.addroom');
 });
-Route::get('/addroomtype', function () {
-    return view('AdminDashboard.AdminPages.RoomDetails.addroomtype');
-});
+// Route::get('/addroomtype', function () {
+//     return view('AdminDashboard.AdminPages.RoomDetails.addroomtype');
+// });
+Route::get('/addroomtype',[RoomController::class,'showroomType']);
+Route::delete('/deleteroomtype/{id}',[RoomController::class,'removeRoomType'])->name('deleteroomtype');
+Route::post('createroomtype',[RoomController::class,'addRoomType'])->name('createroomtype');
+
+
+
 Route::get('/roomdetails', function () {
     return view('AdminDashboard.AdminPages.RoomDetails.roomdetails');
 });
@@ -53,9 +60,6 @@ Route::get('/adduser', function () {
 Route::post('create',[StaffController::class,'addStaff'])->name('create');
 Route::get('/edit{id}',[StaffController::class,'update'])->name('update');
 Route::post('/updated',[StaffController::class,'updateStaff'])->name('updateStaff');
-
-
-
 Route::get('/manageuser',[StaffController::class,'showStaff']);
 
 Route::delete('/delete/{id}',[StaffController::class,'removeStaff'])->name('delete');
