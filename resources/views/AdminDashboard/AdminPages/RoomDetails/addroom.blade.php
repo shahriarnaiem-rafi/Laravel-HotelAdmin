@@ -13,12 +13,13 @@
 
         </header>
 
-        <form class="mt-4 grid grid-cols-2 gap-4">
+        <form class="mt-4 grid grid-cols-2 gap-4" action="{{ route('createroom') }}" method="post">
+            @csrf
             <!-- First Grid -->
             <div>
                 <label class="block font-medium">Select Room Type</label>
 
-                <select class="w-full border p-2 rounded">
+                <select class="w-full border p-2 rounded" name="typeroom">
                     <option value="">Select Room Type</option>
                     @foreach ($showroomTypedata as $showroomt)
                     <option value="{{ $showroomt->typeroom }}">{{ $showroomt->typeroom }}</option>
@@ -28,12 +29,12 @@
 
             <div>
                 <label class="block font-medium">Room Price</label>
-                <input type="number" class="w-full border p-2 rounded" placeholder="Enter price">
+                <input type="number" class="w-full border p-2 rounded" placeholder="Enter price" name="roomprice">
             </div>
 
             <div>
                 <label class="block font-medium">Room Size</label>
-                <input type="text" class="w-full border p-2 rounded" placeholder="Enter size">
+                <input type="text" class="w-full border p-2 rounded" placeholder="Enter size" name="roomsize">
             </div>
 
             <div>
@@ -44,41 +45,42 @@
             <!-- Second Grid -->
             <div>
                 <label class="block font-medium">Room Number</label>
-                <input type="text" class="w-full border p-2 rounded" placeholder="Enter room number">
+                <input type="text" class="w-full border p-2 rounded" placeholder="Enter room number" name="roomnumber">
             </div>
 
             <div>
                 <label class="block font-medium">Select Bed Type</label>
-                <select class="w-full border p-2 rounded">
-                    <option>Single Bed</option>
-                    <option>Double Bed</option>
-                    <option>King Size</option>
+                <select class="w-full border p-2 rounded" name="bedtypes">
+                    <option value="">Select Room Type</option>
+                    @foreach ($showbed as $bedtype)
+                    <option value="{{ $bedtype->bedtypes }}">{{ $bedtype->bedtypes }}</option>
+                    @endforeach
                 </select>
             </div>
 
             <div>
                 <label class="block font-medium">Floor Number</label>
-                <input type="text" class="w-full border p-2 rounded" placeholder="Enter floor number">
+                <input type="text" class="w-full border p-2 rounded" placeholder="Enter floor number" name="floornumber">
             </div>
 
             <div>
                 <label class="block font-medium">Room Capacity</label>
-                <input type="number" class="w-full border p-2 rounded" placeholder="Enter capacity">
+                <input type="number" class="w-full border p-2 rounded" placeholder="Enter capacity" name="roomcapacity">
             </div>
 
             <!-- Below Description and Upload -->
             <div class="col-span-2">
                 <label class="block font-medium">Description</label>
-                <textarea class="w-full border p-2 rounded" placeholder="Enter description"></textarea>
+                <textarea class="w-full border p-2 rounded" placeholder="Enter description" name="description"></textarea>
             </div>
 
             <div class="col-span-2">
                 <label class="block font-medium">Room Photo</label>
-                <input type="text" class="w-full border p-2 rounded" placeholder="input image link">
+                <input type="text" class="w-full border p-2 rounded" placeholder="input image link" name="roomphoto">
             </div>
 
             <div class="col-span-2">
-                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add Room</button>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-green-600 text-white py-2 rounded hover:bg-blue-700">Add Room</button>
             </div>
         </form>
     </div>

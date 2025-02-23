@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AddedRoomController;
 use App\Http\Controllers\BedController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\RoomController;
@@ -45,6 +46,7 @@ Route::get('/maindashboard', function () {
 // Dashboard done 
 
 Route::get('/addroom',[RoomController::class,'senddata']);
+
 // Room add
 
 
@@ -66,6 +68,10 @@ Route::post('createbedtype',[BedController::class,'addBedType'])->name('createbe
 Route::get('/roomdetails', function () {
     return view('AdminDashboard.AdminPages.RoomDetails.roomdetails');
 });
+Route::get('/roomdetails',[AddedRoomController::class,'showroom']);
+Route::delete('/deleteroomdetails/{id}',[AddedRoomController::class,'removeRoom'])->name('deleteroomdetails');
+Route::post('createroom',[AddedRoomController::class,'addroom'])->name('createroom');
+
 
 
 

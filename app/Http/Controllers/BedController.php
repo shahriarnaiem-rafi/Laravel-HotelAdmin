@@ -22,7 +22,6 @@ class BedController extends Controller
     public function addBedType(Request $request)
     {
         $bedtype = new  Bed;
-
         $bedtype->bedtypes = $request->bedtypes;
         $bedtype->save();
         return Redirect::to('/addbed');

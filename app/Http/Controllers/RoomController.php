@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AddroomType;
+use App\Models\Bed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -15,7 +16,8 @@ class RoomController extends Controller
 
     public function senddata(){
         $showroomTypedata=AddroomType::all();
-        return view('AdminDashboard.AdminPages.RoomDetails.addroom',compact('showroomTypedata'));
+        $showbed = Bed::all();
+        return view('AdminDashboard.AdminPages.RoomDetails.addroom',compact('showroomTypedata','showbed'));
    }
     public function removeRoomType($id)
     {
