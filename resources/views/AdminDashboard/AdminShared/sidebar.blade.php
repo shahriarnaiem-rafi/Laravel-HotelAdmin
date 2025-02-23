@@ -96,6 +96,12 @@
                 <p>Add Room Type </p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="/addbed" class="nav-link text-white">
+              <i class="fa-solid fa-bed-pulse"></i>
+                <p>Add Bed Type </p>
+              </a>
+            </li>
 
           </ul>
         </li>

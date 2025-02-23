@@ -7,7 +7,7 @@
     <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         <header class="flex items-center justify-between pb-4 border-b">
             <div class="ml-70">
-                     <img src="https://i.ibb.co.com/W447n6pj/elegant-luxury-hotel-logo-23-2147534418.jpg" alt="Logo" class="h-14 ">
+                <img src="https://i.ibb.co.com/W447n6pj/elegant-luxury-hotel-logo-23-2147534418.jpg" alt="Logo" class="h-14 ">
             </div>
             <h1 class="text-xl font-bold text-center">Add Room</h1>
 
@@ -17,10 +17,12 @@
             <!-- First Grid -->
             <div>
                 <label class="block font-medium">Select Room Type</label>
+
                 <select class="w-full border p-2 rounded">
-                    <option>Single</option>
-                    <option>Double</option>
-                    <option>Suite</option>
+                    <option value="">Select Room Type</option>
+                    @foreach ($showroomTypedata as $showroomt)
+                    <option value="{{ $showroomt->typeroom }}">{{ $showroomt->typeroom }}</option>
+                    @endforeach
                 </select>
             </div>
 
@@ -72,7 +74,7 @@
 
             <div class="col-span-2">
                 <label class="block font-medium">Room Photo</label>
-               <input type="text" class="w-full border p-2 rounded" placeholder="input image link">
+                <input type="text" class="w-full border p-2 rounded" placeholder="input image link">
             </div>
 
             <div class="col-span-2">

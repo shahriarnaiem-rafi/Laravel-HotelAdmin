@@ -12,6 +12,11 @@ class RoomController extends Controller
          $showroomType=AddroomType::all();
          return view('AdminDashboard.AdminPages.RoomDetails.addroomtype', compact('showroomType'));
     }
+
+    public function senddata(){
+        $showroomTypedata=AddroomType::all();
+        return view('AdminDashboard.AdminPages.RoomDetails.addroom',compact('showroomTypedata'));
+   }
     public function removeRoomType($id)
     {
         $showroomType = AddroomType::find($id);
@@ -25,5 +30,5 @@ class RoomController extends Controller
         $showroomt->typeroom=$request->typeroom;
         $showroomt->save();
         return Redirect::to('/addroomtype');
-    }
+    }  
 }
