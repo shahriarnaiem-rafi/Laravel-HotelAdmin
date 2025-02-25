@@ -32,7 +32,7 @@
     </div>
 
     <!-- Sidebar Menu -->
-    <nav class="mt-2 flex-grow">
+    <nav class="mt-2 flex-grow -ms-2">
       <ul class="nav nav-pills nav-sidebar flex-column text-white" data-widget="treeview" role="menu"
         data-accordion="false">
         <li class="nav-item">
@@ -74,7 +74,7 @@
             <i class="fa-solid fa-bed-pulse"></i>
             <p>Room Management
               <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">3</span>
+              <span class="badge badge-info right">4</span>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -109,18 +109,40 @@
         <!-- Booking Management -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-solid fa-person-chalkboard"></i>
-            <p>Booking Management</p>
+          <i class="fa-solid fa-bookmark"></i>
+            <p>Booking Management
+              <i class="fas fa-angle-left right"></i>
+              <span class="badge badge-info right">3</span>
+            </p>
           </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/bookinglist" class="nav-link text-white">
+              <i class="fa-solid fa-list-check"></i>
+                <p>Booking List</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/bookingreport" class="nav-link text-white">
+              <i class="fa-solid fa-bug-slash"></i>
+                <p>Booking Report </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/roomstatus" class="nav-link text-white">
+              <i class="fa-solid fa-chart-simple"></i>
+                <p>Room Status</p>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <!-- Transaction -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white">
-            <i class="fa-solid fa-money-bill-trend-up"></i>
+          <i class="fa-solid fa-money-bill-transfer"></i>
             <p>
               Transection
-
             </p>
           </a>
         </li>

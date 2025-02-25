@@ -89,3 +89,11 @@ Route::get('/manageuser',[StaffController::class,'showStaff']);
 
 Route::delete('/delete/{id}',[StaffController::class,'removeStaff'])->name('delete');
 // user management done
+
+//booking management
+Route::get('/bookingreport', function () {
+    return view('AdminDashboard.AdminPages.BookingManagement.bookingreport');
+});
+Route::get('/roomstatus', function () {
+    return view('AdminDashboard.AdminPages.BookingManagement.roomstatus');
+});
