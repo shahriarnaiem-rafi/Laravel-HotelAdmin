@@ -4,9 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Hotel | Home</title>
+    <title>GrandPr0 | Hotel</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Style for the scroll to top button */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1;
+            /* Hidden by default */
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
@@ -16,7 +38,9 @@
 
     <!-- Navbar -->
 
-
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fa fa-arrow-up"></i>
+    </button>
     <!-- Hero Section -->
     <div class="relative min-h-[400px] bg-cover bg-center flex items-center justify-center text-white"
         style="background-image: url('https://i.ibb.co/SzGFCHt/Banner.jpg');">
