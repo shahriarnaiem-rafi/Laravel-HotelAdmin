@@ -8,6 +8,7 @@
 </head>
 <body class="bg-gray-100">
     @include('shared.header')
+    
 
     <!-- Contact Section -->
     <section class="py-16 px-4 md:px-8">

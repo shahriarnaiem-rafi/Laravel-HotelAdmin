@@ -8,6 +8,7 @@
 </head>
 <body class="bg-gray-100">
 @include('shared.header');
+
   <div class="min-h-screen">
 
     <!-- Hero Section -->

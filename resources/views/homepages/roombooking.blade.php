@@ -11,6 +11,7 @@
 
 @include('shared.header')
 
+
     <!-- Page Content -->
     <div class="pt-20 pb-12">
         <div class="container mx-auto px-6">

@@ -8,6 +8,7 @@
 </head>
 <body class="bg-gray-100">
 @include('shared.header');
+
     <!-- Hero Section -->
     <div class="relative min-h-[400px] bg-cover bg-center flex items-center justify-center text-white"
         style="background-image: url('https://i.ibb.co/SzGFCHt/Banner.jpg');">
