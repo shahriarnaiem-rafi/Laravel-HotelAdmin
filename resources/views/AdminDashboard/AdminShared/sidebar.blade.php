@@ -139,7 +139,7 @@
 
         <!-- Transaction -->
         <li class="nav-item">
-          <a href="#" class="nav-link text-white">
+          <a href="/transection" class="nav-link text-white">
           <i class="fa-solid fa-money-bill-transfer"></i>
             <p>
               Transection

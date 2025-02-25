@@ -100,3 +100,9 @@ Route::get('/roomstatus', function () {
 Route::get('/bookingreport', function () {
     return view('AdminDashboard.AdminPages.BookingManagement.bookingreport');
 });
+
+//end booking
+
+Route::get('/transection', function () {
+    return view('AdminDashboard.AdminPages.Transection.transection');
+});
