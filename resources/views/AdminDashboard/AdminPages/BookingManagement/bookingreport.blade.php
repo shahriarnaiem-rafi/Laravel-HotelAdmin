@@ -4,15 +4,15 @@
 <section class="ml-52 mt-2">
     <form method="POST" action="main_dashboard.php?page=monthly_booking" class="max-w-lg md:mx-auto mx-4 md:p-8 px-4 py-4 rounded-xl hover:shadow-2xl transition-shadow duration-300 bg-white border border-gray-200 mb-6">
         <div class="mb-4">
-            <label for="checkin_date" class="block text-gray-700 font-semibold">Check-in Date:</label>
-            <input type="date" name="checkin_date" id="checkin_date" class="py-3 px-4 bg-white border-2 border-violet-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-violet-500" required>
+            <label for="checkin_date" class="block text-gray-700 font-semibold ">Check-in Date:</label>
+            <input type="date" name="checkin_date" id="checkin_date" class="py-3 px-4 bg-white border-2 border-red-500 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-black" required>
         </div>
         <div class="mb-4">
             <label for="checkout_date" class="block text-gray-700 font-semibold">Check-out Date:</label>
-            <input type="date" name="checkout_date" id="checkout_date" class="py-3 px-4 bg-white border-2 border-violet-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-violet-500" required>
+            <input type="date" name="checkout_date" id="checkout_date" class="py-3 px-4 bg-white border-2 border-red-500 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-black" required>
         </div>
-        <button type="submit" name="submit" id="submitbtn" class="relative flex justify-center items-center w-full py-3 border-2 rounded-lg border-blue-500 text-blue-500 font-semibold hover:text-white bg-transparent overflow-hidden group transition-all duration-500 mt-5">
-            <span class="absolute inset-0 bg-blue-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+        <button type="submit" name="submit" id="submitbtn" class=" relative flex justify-center items-center w-full py-3 border-2 rounded-lg border-red-500 text-blue-500 font-semibold hover:text-white bg-transparent overflow-hidden group transition-all duration-500 mt-5">
+            <span class="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out "></span>
             <span class="relative z-10 uppercase">Search Bookings</span>
         </button>
     </form>
