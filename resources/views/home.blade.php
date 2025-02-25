@@ -39,7 +39,7 @@
                     </h4>
                     <input type="date" id="checkin" name="checkin" value="2025-02-19"
                         required min="2025-02-19"
-                        class="md:w-[90%] w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 border-blue-500 bg-[--primary-color]">
+                        class="md:w-[90%] w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black border-red-500 bg-[--primary-color]">
                 </div>
 
                 <!-- Check-out Date -->
@@ -50,14 +50,14 @@
                     <input type="date" id="checkout" name="checkout"
                         value="2025-02-20" required
                         min="2025-02-20"
-                        class="md:w-[90%] w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 border-blue-500 bg-[--primary-color]">
+                        class="md:w-[90%] w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black border-red-500 bg-[--primary-color]">
                 </div>
 
                 <!-- Guests Section -->
                 <div class="flex flex-col items-center md:border-r-2 md:border-gray-300">
                     <h4 class="text-lg font-semibold mb-2 text-[--secondary-color] titel_content">GUESTS &#128101;</h4>
                     <select name="guests"
-                        class="md:w-[90%] w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 titel_content border-blue-500 bg-[--primary-color]">
+                        class="md:w-[90%] w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black titel_content border-red-500 bg-[--primary-color]">
                         <option value="1">1 Guest</option>
                         <option value="2">2 Guests</option>
                         <option value="3">3 Guests</option>
@@ -68,9 +68,9 @@
                 <!-- Check Availability Button -->
                 <div class="check-availability flex flex-col items-center justify-center">
                     <a type="submit" href="/room"
-                        class="relative flex justify-center items-center w-full h-full py-2 md:py-0 border-2 rounded-lg border-blue-500 hover:text-white overflow-hidden group">
+                        class="relative flex justify-center items-center w-full h-full py-2 md:py-0 border-2 rounded-lg border-red-500 hover:text-white overflow-hidden group">
                         <span
-                            class="absolute inset-0 bg-blue-500 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                            class="absolute inset-0 bg-black translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                         <span class="relative z-10 uppercase text-xl titel_content">Check Availability</span>
                     </a>
                 </div>
@@ -108,7 +108,7 @@
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button
-                        class="btn btn-primary text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        class="btn btn-primary text-white bg-blue-600 hover:bg-black px-6 py-3 rounded-lg shadow-md transition duration-300">
                         <a href="/roombooking">Book Now</a>
                     </button>
                 </div>
@@ -135,7 +135,7 @@
                         excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
 
                     <button
-                        class="btn btn-primary text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        class="btn btn-primary text-white bg-blue-600 hover:bg-black px-6 py-3 rounded-lg shadow-md transition duration-300">
                         <a href="/roombooking">Book Now</a>
                     </button>
                 </div>
@@ -168,7 +168,7 @@
                         excepturi exercitationem quasi. </p>
 
                     <button
-                        class="btn btn-primary text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        class="btn btn-primary text-white bg-blue-600 hover:bg-black px-6 py-3 rounded-lg shadow-md transition duration-300">
                         <a href="/roombooking">Book Now</a>
                     </button>
                 </div>
