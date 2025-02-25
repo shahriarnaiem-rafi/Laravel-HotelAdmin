@@ -91,9 +91,12 @@ Route::delete('/delete/{id}',[StaffController::class,'removeStaff'])->name('dele
 // user management done
 
 //booking management
-Route::get('/bookingreport', function () {
-    return view('AdminDashboard.AdminPages.BookingManagement.bookingreport');
+Route::get('/bookinglist', function () {
+    return view('AdminDashboard.AdminPages.BookingManagement.bookinglist');
 });
 Route::get('/roomstatus', function () {
     return view('AdminDashboard.AdminPages.BookingManagement.roomstatus');
+});
+Route::get('/bookingreport', function () {
+    return view('AdminDashboard.AdminPages.BookingManagement.bookingreport');
 });

@@ -1,7 +1,7 @@
 @extends('AdminDashboard.main')
 
 @section('content')
-<section>
+<section class="ml-52 mt-2">
     <form method="POST" action="main_dashboard.php?page=monthly_booking" class="max-w-lg md:mx-auto mx-4 md:p-8 px-4 py-4 rounded-xl hover:shadow-2xl transition-shadow duration-300 bg-white border border-gray-200 mb-6">
         <div class="mb-4">
             <label for="checkin_date" class="block text-gray-700 font-semibold">Check-in Date:</label>
