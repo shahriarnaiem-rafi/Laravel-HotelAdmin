@@ -1,3 +1,4 @@
+
 <?php
 
 use App\Http\Controllers\AddedRoomController;
@@ -17,9 +18,13 @@ Route::get('/inspiration', function () {
 Route::get('/roombooking', function () {
     return view('homepages.roombooking');
 });
-Route::get('/room', function () {
-    return view('homepages.room');
-});
+// Route::get('/room', function () {
+//     return view('homepages.room');
+// });
+
+Route::get('/room',[AddedRoomController::class,'senddataRoom']);
+
+
 Route::get('/about', function () {
     return view('homepages.about');
 });
@@ -105,4 +110,14 @@ Route::get('/bookingreport', function () {
 
 Route::get('/transection', function () {
     return view('AdminDashboard.AdminPages.Transection.transection');
+});
+
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// staff
+
+
+
+Route::get('/staffdashboard', function () {
+    return view('StaffDashboard.main');
 });

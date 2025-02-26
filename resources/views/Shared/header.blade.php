@@ -1,7 +1,7 @@
 <nav class="bg-gray-800 p-4 shadow-lg fixed w-full top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
-        <img src="https://i.ibb.co.com/Y7fpTbrX/illustration-logo-grand-hotel-boutique-vintage-design-free-vector-removebg-preview-2.png" alt="logo" style="width:90px; height:70px; position: absolute; margin-left:-90px;">
-        <a href="#" class="text-white text-xl font-bold"><span style="margin-left:-3px; color: orangered;">G</span>randPr <span style="margin-left:-5px; color: orangered;">0</span> Hotel</a>
+        <img src="https://i.ibb.co.com/Y7fpTbrX/illustration-logo-grand-hotel-boutique-vintage-design-free-vector-removebg-preview-2.png" alt="logo" style="width:90px; height:70px; position: absolute;">
+       <br> <a href="#" class="text-white text-xl font-bold" style="margin-left:-400px;"><span style="margin-left:-3px; color: orangered;">G</span>randPr <span style="margin-left:-5px; color: orangered;">0</span> Hotel</a>
         <ul id="menu" class="hidden md:flex space-x-6 text-white md:items-center">
             <li><a href="/" class="hover:text-yellow-500">Home</a></li>
 

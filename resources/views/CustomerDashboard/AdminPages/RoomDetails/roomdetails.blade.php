@@ -1,6 +1,7 @@
 @extends('AdminDashboard.main')
 
 @section('content')
+
 <body class="bg-gray-100">
 
     <!-- Page Header -->
@@ -23,41 +24,30 @@
                 </thead>
                 <tbody>
                     <!-- Room 1 -->
+                    @foreach ($showroom as $showsingleroom)
+
+
                     <tr class="border-b">
-                        <td class="px-6 py-4 text-sm text-gray-900">101</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Single</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">$100</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $showsingleroom->roomnumber }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $showsingleroom->typeroom }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $showsingleroom->roomprice }}</td>
+
                         <td class="px-6 py-4 text-sm text-gray-900">Vacant</td>
                         <td class="px-6 py-4">
                             <!-- onclick="openEditModal('101', 'Single', 100, 'Vacant')" -->
-                            <button 
-                                class="bg-yellow-500 text-white px-4 py-2 rounded-md">Edit</button>
+                            <!-- <button
+                                class=" text-green   rounded-md"><i class="fa-solid fa-pen-to-square"></i> </button> -->
+                            <form action="{{ route('deleteroomdetails',$showsingleroom->id) }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit"
+                                    class=" text-red px-4 py-2 rounded-md"><i class="fa-solid fa-trash"></i></button>
+
+                            </form>
                         </td>
                     </tr>
-                    <!-- Room 2 -->
-                    <tr class="border-b">
-                        <td class="px-6 py-4 text-sm text-gray-900">102</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Double</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">$150</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Reserved</td>
-                        <td class="px-6 py-4">
-                            <!-- onclick="openEditModal('102', 'Double', 150, 'Reserved')" -->
-                            <button 
-                                class="bg-yellow-500 text-white px-4 py-2 rounded-md">Edit</button>
-                        </td>
-                    </tr>
-                    <!-- Room 3 -->
-                    <tr class="border-b">
-                        <td class="px-6 py-4 text-sm text-gray-900">103</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Suite</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">$250</td>
-                        <td class="px-6 py-4 text-sm text-gray-900">Maintenance</td>
-                        <td class="px-6 py-4">
-                            <!-- onclick="openEditModal('103', 'Suite', 250, 'Maintenance')" -->
-                            <button 
-                                class="bg-yellow-500 text-white px-4 py-2 rounded-md">Edit</button>
-                        </td>
-                    </tr>
+                    @endforeach
+
                 </tbody>
             </table>
         </div>
@@ -94,7 +84,7 @@
                 </div>
                 <!-- onclick="closeModal()" -->
                 <div class="flex justify-end">
-                    <button type="button" 
+                    <button type="button"
                         class="bg-red-500 text-white px-4 py-2 rounded-md mr-2">Cancel</button>
                     <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Save</button>
                 </div>
@@ -102,7 +92,7 @@
         </div>
     </div>
 
-    <!-- <script>
+    <script>
         function openEditModal(roomNumber, roomType, price, status) {
             // Populate form fields
             document.getElementById('roomNumber').value = roomNumber;
@@ -120,12 +110,12 @@
         }
 
         // Handle form submission (you can customize this to save the data)
-        document.getElementById('editForm').addEventListener('submit', function (e) {
+        document.getElementById('editForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Room details updated!');
             closeModal();
         });
-    </script> -->
+    </script>
 
 </body>
 

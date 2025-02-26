@@ -26,11 +26,12 @@
             <!-- Uncomment and add error message logic -->
             <!-- <div class="text-red-500 text-center mb-4">Error message goes here</div> -->
 
-            <form>
+            <form onsubmit="submitform(event)">
                 <!-- Role Selection -->
                 <label for="role" class="block text-gray-400 mb-2">Role</label>
                 <select id="role"
                     class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+                    <option value="">Select Role</option>
                     <option value="Admin">Admin</option>
                     <option value="Staff">Staff</option>
                     <option value="Customer">Customer</option>
@@ -52,9 +53,9 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit"
+                <button
                     class="w-full py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg hover:bg-orange-400 transition duration-300">
-                    <a href="/maindashboard">Log in</a>
+                    Log in
                 </button>
 
                 <!-- Registration Link -->
@@ -68,6 +69,30 @@
             </div>
         </div>
     </div>
+    <script>
+        function submitform(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value.toLowerCase();
+            
+            const password = document.getElementById('password').value;
+            const role = document.getElementById('role').value.toLowerCase();
+            
+
+            if (email === 'rafi@gmail.com' && role === 'admin' && password === '1234') {
+                window.location.href = '/maindashboard';
+            }
+            else if (email === 'staff@gmail.com' && role === 'staff' && password === '1234') {
+                window.location.href = '/staffdashboard';
+            }
+            else if (email === 'customer@gmail.com' && role === 'customer' && password === '1234') {
+                window.location.href = '/customerdashboard';
+            }
+            else {
+                alert('invalid user');
+            }
+
+        }
+    </script>
 
 </body>
 
