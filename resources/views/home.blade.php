@@ -105,9 +105,6 @@
 
 
 
-
-
-
     <!-- About  -->
     <div class="py-8">
         <div class="hero bg-base-200 min-h-screen">

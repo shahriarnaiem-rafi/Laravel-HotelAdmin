@@ -29,8 +29,9 @@
             <form>
                 <!-- Role Selection -->
                 <label for="role" class="block text-gray-400 mb-2">Role</label>
-                <select id="role"
+                <select id="role" required
                     class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+                    <option value="">Select Your Roll</option>
                     <option value="Admin">Admin</option>
                     <option value="Staff">Staff</option>
                     <option value="Customer">Customer</option>

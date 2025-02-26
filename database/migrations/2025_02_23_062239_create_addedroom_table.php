@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('roomnumber');
             $table->string('bedtypes');
             $table->string('floornumber');
+            $table->string('roomview');
             
             $table->string('roomcapacity');
             $table->string('description');
