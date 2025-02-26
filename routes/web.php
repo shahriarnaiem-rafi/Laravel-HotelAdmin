@@ -114,10 +114,4 @@ Route::get('/transection', function () {
 
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// staff
 
-
-
-Route::get('/staffdashboard', function () {
-    return view('StaffDashboard.main');
-});

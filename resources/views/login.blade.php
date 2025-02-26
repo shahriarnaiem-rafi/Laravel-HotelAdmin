@@ -29,9 +29,13 @@
             <form onsubmit="submitform(event)">
                 <!-- Role Selection -->
                 <label for="role" class="block text-gray-400 mb-2">Role</label>
-                <select id="role"
+                <select id="role" required
                     class="w-full px-4 py-2 mb-4 bg-gray-800 text-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500">
+
                     <option value="">Select Role</option>
+
+                    <option value="">Select Your Roll</option>
+
                     <option value="Admin">Admin</option>
                     <option value="Staff">Staff</option>
                     <option value="Customer">Customer</option>
@@ -73,20 +77,20 @@
         function submitform(event) {
             event.preventDefault();
             const email = document.getElementById('email').value.toLowerCase();
-            
+
             const password = document.getElementById('password').value;
             const role = document.getElementById('role').value.toLowerCase();
-            
+
 
             if (email === 'rafi@gmail.com' && role === 'admin' && password === '1234') {
                 window.location.href = '/maindashboard';
             }
-            else if (email === 'staff@gmail.com' && role === 'staff' && password === '1234') {
-                window.location.href = '/staffdashboard';
-            }
-            else if (email === 'customer@gmail.com' && role === 'customer' && password === '1234') {
-                window.location.href = '/customerdashboard';
-            }
+            // else if (email === 'staff@gmail.com' && role === 'staff' && password === '1234') {
+            //     window.location.href = '/staffdashboard';
+            // }
+            // else if (email === 'customer@gmail.com' && role === 'customer' && password === '1234') {
+            //     window.location.href = '/customerdashboard';
+            // }
             else {
                 alert('invalid user');
             }

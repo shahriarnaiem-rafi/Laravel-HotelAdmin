@@ -41,4 +41,8 @@ class AddedRoomController extends Controller
         $showroom = Addedroom::all();
         return view('homepages.room', compact('showroom'));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 51fbf9f8cae2e044e2fc18c143142ff999ac74eb
