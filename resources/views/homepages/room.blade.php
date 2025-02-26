@@ -40,7 +40,7 @@
 
                     <!-- Grid 2: View & Bed Type -->
                     <div class="grid grid-cols-2 gap-2 text-gray-600 text-sm mt-1">
-                        <p class="flex items-center"><i class="fa-solid fa-eye text-blue-500 mr-1"></i>{{ $showsingleroom->view ?? 'No View' }}</p>
+                        <p class="flex items-center"><i class="fa-solid fa-eye text-blue-500 mr-1"></i>{{ $showsingleroom->roomview }}</p>
                         <p class="flex items-center"><i class="fa-solid fa-bed text-blue-500 mr-1"></i>{{ $showsingleroom->bedtypes }}</p>
                     </div>
 
@@ -52,13 +52,13 @@
 
                     <!-- Learn More Button -->
                     <a href="/login" class="mt-2 bg-blue-600 text-white py-1.5 rounded-md text-center text-sm font-semibold hover:bg-blue-700 transition duration-300">
-                      Book Know
+                        Book Know
                     </a>
                 </div>
                 @endforeach
             </div>
         </div>
-        
+
 
 
 

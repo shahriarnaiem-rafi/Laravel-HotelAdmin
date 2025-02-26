@@ -39,7 +39,7 @@
 
             <div>
                 <label class="block font-medium">View</label>
-                <input type="text" class="w-full border p-2 rounded" placeholder="Enter view type">
+                <input type="text" class="w-full border p-2 rounded" placeholder="Enter view type" name="roomview">
             </div>
 
             <!-- Second Grid -->
@@ -80,7 +80,7 @@
             </div>
 
             <div class="col-span-2">
-                <button type="submit" class="w-full bg-blue-600 hover:bg-green-600 text-white py-2 rounded hover:bg-blue-700">Add Room</button>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-green-600 text-white py-2 rounded ">Add Room</button>
             </div>
         </form>
     </div>
